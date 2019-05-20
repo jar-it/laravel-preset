@@ -24,8 +24,7 @@ class Preset extends BasePreset {
         return [
             'laravel-mix' => '^4.0.14',
             'laravel-mix-purgecss' => '^4.1',
-            'laravel-mix-tailwind' => '^0.1.0',
-            'tailwindcss' => '0.7.4',
+            'tailwindcss' => '^1.0.1',
             'vue' => '^2.5.17',
             'vue-template-compiler' => '^2.6.4',
             'eslint' => '^5.15.1',
@@ -45,7 +44,7 @@ class Preset extends BasePreset {
 
     protected static function updateBootstrapping()
     {
-        copy(__DIR__.'/stubs/tailwind.js', base_path('tailwind.js'));
+        copy(__DIR__.'/stubs/tailwind.config.js', base_path('tailwind.config.js'));
 
         copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
 
