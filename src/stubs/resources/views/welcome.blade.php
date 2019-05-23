@@ -16,7 +16,7 @@
   <body class="bg-gray-100 h-screen antialiased">
     <div class="flex flex-col">
       @if(Route::has('login'))
-        <div class="absolute pin-t pin-r mt-4 mr-4">
+        <div class="absolute top-0 right-0 mt-4 mr-4">
           @auth
             <a href="{{ url('/home') }}" class="no-underline hover:underline text-sm font-normal text-teal-700 uppercase">{{ __('Home') }}</a>
           @else
