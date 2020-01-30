@@ -56,8 +56,6 @@ class Preset extends BasePreset
     {
         tap(new Filesystem, function ($filesystem) {
             $filesystem->deleteDirectory(resource_path('sass'));
-            $filesystem->delete(public_path('js/app.js'));
-            $filesystem->delete(public_path('css/app.css'));
 
             if (! $filesystem->isDirectory($directory = resource_path('css'))) {
                 $filesystem->makeDirectory($directory, 0755, true);

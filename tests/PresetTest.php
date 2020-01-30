@@ -63,8 +63,6 @@ class PresetTest extends TestCase
     public function it_removes_unused_style_paths()
     {
         $this->assertFalse((new Filesystem)->exists(resource_path('sass')));
-        $this->assertFalse((new Filesystem)->exists(public_path('js/app.js')));
-        $this->assertFalse((new Filesystem)->exists(public_path('css/app.js')));
     }
 
     /** @test **/
