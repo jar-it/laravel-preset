@@ -6,7 +6,24 @@ use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset as BasePreset;
 
-class Preset extends BasePreset {
+class Preset extends BasePreset 
+{
+    const INSTALL_PACKAGES = [
+        'laravel-mix' => '^4.0.14',
+        'laravel-mix-purgecss' => '^4.1',
+        'tailwindcss' => '^1.0.1',
+        'vue' => '^2.5.17',
+        'vue-template-compiler' => '^2.6.4',
+        'eslint' => '^5.15.1',
+        'eslint-plugin-vue' => '^5.2.2'
+    ];
+
+    const REMOVE_PACKAGES = [
+        'bootstrap',
+        'boostrap-sass',
+        'laravel-mix',
+        'jquery',
+    ];
 
     public static function install()
     {
@@ -21,20 +38,7 @@ class Preset extends BasePreset {
 
     protected static function updatePackageArray(array $packages)
     {
-        return [
-            'laravel-mix' => '^4.0.14',
-            'laravel-mix-purgecss' => '^4.1',
-            'tailwindcss' => '^1.0.1',
-            'vue' => '^2.5.17',
-            'vue-template-compiler' => '^2.6.4',
-            'eslint' => '^5.15.1',
-            'eslint-plugin-vue' => '^5.2.2'
-        ] + Arr::except($packages, [
-            'bootstrap',
-            'boostrap-sass',
-            'laravel-mix',
-            'jquery',
-        ]);
+        return static::INSTALL_PACKAGES + Arr::except($packages, static::REMOVE_PACKAGES);
     }
 
     protected static function updateCodeStyles()

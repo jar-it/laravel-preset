@@ -16,5 +16,8 @@
                 "JarIt\\LaravelPreset\\PresetServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
     }
 }
