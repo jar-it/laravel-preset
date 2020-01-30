@@ -50,6 +50,10 @@ class Preset extends BasePreset
         copy(__DIR__.'/stubs/webpack.mix.js', base_path('webpack.mix.js'));
 
         copy(__DIR__.'/stubs/resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
+
+        copy(__DIR__.'/stubs/resources/js/app.js', resource_path('js/app.js'));
+
+        copy(__DIR__.'/stubs/resources/js/root.js', resource_path('js/root.js'));
     }
 
     protected static function updateStyles()

@@ -57,6 +57,8 @@ class PresetTest extends TestCase
         $this->assertFileEquals($this->presetPath('stubs/tailwind.config.js'), base_path('tailwind.config.js'));
         $this->assertFileEquals($this->presetPath('stubs/webpack.mix.js'), base_path('webpack.mix.js'));
         $this->assertFileEquals($this->presetPath('stubs/resources/js/bootstrap.js'), base_path('resources/js/bootstrap.js'));
+        $this->assertFileEquals($this->presetPath('stubs/resources/js/app.js'), base_path('resources/js/app.js'));
+        $this->assertFileEquals($this->presetPath('stubs/resources/js/root.js'), base_path('resources/js/root.js'));
     }
 
     /** @test **/
