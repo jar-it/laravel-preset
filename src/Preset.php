@@ -9,20 +9,17 @@ use Illuminate\Foundation\Console\Presets\Preset as BasePreset;
 class Preset extends BasePreset 
 {
     const INSTALL_PACKAGES = [
-        'laravel-mix' => '^4.0.14',
-        'laravel-mix-purgecss' => '^4.1',
-        'tailwindcss' => '^1.0.1',
+        'laravel-mix-purgecss' => '^4.2',
+        'tailwindcss' => '^1.1.4',
         'vue' => '^2.5.17',
-        'vue-template-compiler' => '^2.6.4',
-        'eslint' => '^5.15.1',
-        'eslint-plugin-vue' => '^5.2.2'
+        'vue-template-compiler' => '^2.6.11',
+        'eslint' => '^6.8.0',
+        'eslint-plugin-vue' => '^6.1.2'
     ];
 
     const REMOVE_PACKAGES = [
-        'bootstrap',
-        'boostrap-sass',
-        'laravel-mix',
-        'jquery',
+        'sass',
+        'sass-loader'
     ];
 
     public static function install()
