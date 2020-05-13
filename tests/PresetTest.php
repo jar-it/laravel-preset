@@ -17,7 +17,7 @@ class PresetTest extends TestCase
 
         parent::setUp();
 
-        $this->artisan('preset jar-it');
+        $this->artisan('ui jar-it');
     }
 
     protected function tearDown(): void
@@ -103,7 +103,10 @@ class PresetTest extends TestCase
 
     protected function getPackageProviders($app)
     {
-        return ['JarIt\LaravelPreset\PresetServiceProvider'];
+        return [
+            'Laravel\Ui\UiServiceProvider',
+            'JarIt\LaravelPreset\PresetServiceProvider',
+        ];
     }
 
     protected function getBasePath()

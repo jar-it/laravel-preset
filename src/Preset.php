@@ -4,7 +4,7 @@ namespace JarIt\LaravelPreset;
 
 use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Foundation\Console\Presets\Preset as BasePreset;
+use Laravel\Ui\Presets\Preset as BasePreset;
 
 class Preset extends BasePreset 
 {

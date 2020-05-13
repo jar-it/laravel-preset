@@ -3,7 +3,8 @@
     "description": "A frontend preset for the Laravel Framework",
     "license": "MIT",
     "require": {
-        "laravel/framework": "^6.0"
+        "laravel/framework": "^7.0",
+        "laravel/ui": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -18,6 +19,6 @@
         }
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0"
+        "orchestra/testbench": "^5.0"
     }
 }

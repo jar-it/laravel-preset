@@ -1,4 +1,4 @@
-# Laravel 6.0+ Frontend Preset for JAR IT
+# Laravel 7.0+ Frontend Preset for JAR IT
 
 A Laravel Frontend scaffolding preset for [JAR IT](http://jar-it.com).
 
@@ -16,9 +16,9 @@ Removes:
 
 ## Usage
 
-1. Fresh install Laravel ^6.0 and cd into your app.
+1. Fresh install Laravel ^7.0 and cd into your app.
 2. Install this preset via `composer require jar-it/laravel-preset --dev`. Laravel will automatically discover this package. No need to register the service provider.
-3. Use `php artisan preset jar-it` to apply the preset.
+3. Use `php artisan ui jar-it` to apply the preset.
 4. Run `npm install && npm run dev`
 
 ### Config
