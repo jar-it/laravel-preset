@@ -9,9 +9,9 @@ use Laravel\Ui\Presets\Preset as BasePreset;
 class Preset extends BasePreset 
 {
     const INSTALL_PACKAGES = [
-        'laravel-mix-purgecss' => '^4.2',
-        'tailwindcss' => '^1.1.4',
-        'vue' => '^2.5.17',
+        'laravel-mix-purgecss' => '^5.0',
+        'tailwindcss' => '^1.4.5',
+        'vue' => '^2.6.11',
         'vue-template-compiler' => '^2.6.11',
         'eslint' => '^6.8.0',
         'eslint-plugin-vue' => '^6.1.2'
