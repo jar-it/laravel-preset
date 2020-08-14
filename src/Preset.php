@@ -10,7 +10,7 @@ class Preset extends BasePreset
 {
     const INSTALL_PACKAGES = [
         'laravel-mix-purgecss' => '^5.0',
-        'tailwindcss' => '^1.4.5',
+        'tailwindcss' => '^1.6.2',
         'vue' => '^2.6.11',
         'vue-template-compiler' => '^2.6.11',
         'eslint' => '^6.8.0',
