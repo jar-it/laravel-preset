@@ -95,12 +95,6 @@ class PresetTest extends TestCase
         });
     }
 
-    /** @test **/
-    public function it_updates_testcase()
-    {
-        $this->assertFileEquals($this->presetPath('stubs/tests/TestCase.php'), base_path('tests/TestCase.php'));
-    }
-
     protected function getPackageProviders($app)
     {
         return [

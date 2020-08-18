@@ -30,7 +30,6 @@ class Preset extends BasePreset
         static::updateStyles();
         static::updateViews();
         static::updateComponents();
-        static::updateTestCase();
     }
 
     protected static function updatePackageArray(array $packages)
@@ -77,10 +76,5 @@ class Preset extends BasePreset
     protected static function updateComponents()
     {
         (new Filesystem)->copyDirectory(__DIR__.'/stubs/resources/js/components', resource_path('js/components'));
-    }
-
-    protected static function updateTestCase()
-    {
-        copy(__DIR__.'/stubs/tests/TestCase.php', base_path('tests/TestCase.php'));
     }
 }
